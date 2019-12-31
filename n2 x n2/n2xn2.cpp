@@ -2,9 +2,8 @@
 #include<conio.h>
 #include<iomanip>
 #include<fstream>
-#include<math.h>
 using namespace std;
-int a[100][100], lastX, lastY, n, dem=0;
+int a[100][100], lastX, lastY, n;
 void show()
 {
 	for(int i=0;i<n*n;i++)
@@ -38,11 +37,11 @@ void output()
 }
 bool checkReplace(int x, int y, int k)
 {
-//	kiem tra cot thu x
+//	kiem tra hang thu x
 	for(int j=0;j<n*n;j++)
 		if(a[x][j]==k)
 			return true;
-//	kiem tra hang thu y
+//	kiem tra cot thu y
 	for(int i=0;i<n*n;i++)
 		if(a[i][y]==k)
 			return true;

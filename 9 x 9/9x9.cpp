@@ -34,11 +34,11 @@ void output()
 }
 bool checkReplace(int x, int y, int n)
 {
-//	kiem tra cot thu x
+//	kiem tra hang thu x
 	for(int j=0;j<9;j++)
 		if(a[x][j]==n)
 			return true;
-//	kiem tra hang thu y
+//	kiem tra cot thu y
 	for(int i=0;i<9;i++)
 		if(a[i][y]==n)
 			return true;
